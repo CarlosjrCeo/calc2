@@ -1,0 +1,63 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#forme {
+    width: 350px;
+    height: 450px;
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    margin-top: 100px;
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+#forme:hover { 
+    transform: scale(1.01);
+    box-shadow: 0px 5px 50px rgb(185, 185, 185);
+    background-color: white;
+}
+
+#header {
+    margin-top: 40px;
+}
+
+#soma1 {
+    margin-top: 2px;
+}
+
+#send {
+    margin-top: 25px;
+}
+
+.campo {
+    width: 190px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #6c6c6c;
+    text-align: center;
+}
+
+.botao {
+    width: 190px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #6c6c6c;
+}
+
+.botao:hover {
+    background: #008b15;
+    color: white;
+    transition: 0.3s;
+}
+
+#resultado {
+    text-align: center;
+    margin-top: 42px;
+    color: #008b15;
+}
