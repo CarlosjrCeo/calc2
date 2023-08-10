@@ -1,6 +1,8 @@
-const botao = document.querySelector("#send");
-const botao1 = document.querySelector("#send1");
-const botao2 = document.querySelector("#send2");
+// const botao = document.querySelector("#send");
+// const botao1 = document.querySelector("#send1");
+// const botao2 = document.querySelector("#send2");
+
+var imagem = "./demo.jpg"
 
 function operacao(event, type) {
 
@@ -11,8 +13,15 @@ function operacao(event, type) {
 
     var resultado = type === 'sum' ? val1 + val2 : type === 'mult' ? val1 * val2 : type === 'div' ? val1 / val2 : 0;
 
+                  //se o tipo for identico a sum, faça val1 + val2 :(se não) se for mult, faça val1 * val2
+
     document.getElementById("resultado").innerHTML = `O resultado é: ${resultado}`;
 
-    // alert(somaTotal);
+    if (resultado == 666) {
+        document.body.style.backgroundImage = "url('" + imagem + "')";
+    }
+    else {
+        document.body.style.backgroundImage = null;
+    }
 
 };
