@@ -11,7 +11,7 @@ function operacao(event, type) {
     const val1 = parseInt(document.getElementById("soma1").value);
     const val2 = parseInt(document.getElementById("soma2").value);
 
-    var resultado = type === 'sum' ? val1 + val2 : type === 'mult' ? val1 * val2 : type === 'div' ? val1 / val2 : 0;
+    var resultado = type === 'sub' ? val1 - val2 : type === 'sum' ? val1 + val2 : type === 'mult' ? val1 * val2 : type === 'div' ? val1 / val2 : 0;
 
                   //se o tipo for identico a sum, faça val1 + val2 :(se não) se for mult, faça val1 * val2
 
